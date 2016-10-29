@@ -39,14 +39,19 @@ public class Signup1 extends AppCompatActivity
                 // check if f3 and f4 are equal
                 if (pass1.equals(pass2))
                 {
+                    // if f3 and f4 are equal then
+                    // it will go to the next activity
                     Intent i = new Intent(Signup1.this, FinalSignup.class);
+
+                    // we are passing the value for name and email
+                    // to the next activity to display it.
                     i.putExtra("name", name);
                     i.putExtra("Email", email);
                     startActivity(i);
                 }
                 else
                 {
-                    // give error
+                    // Report that the passwords do not match
                     f3.setError("Passwords do not match");
                 }
 

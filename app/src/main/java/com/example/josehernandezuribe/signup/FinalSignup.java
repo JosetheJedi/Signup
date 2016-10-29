@@ -20,6 +20,9 @@ public class FinalSignup extends AppCompatActivity {
         p2 = (TextView)findViewById(R.id.p2);
 
         Intent i = getIntent();
+
+        // setting p1 to the name data that was sent
+        // setting p2 to the email data that was sent
         p1.setText(i.getStringExtra("name"));
         p2.setText(i.getStringExtra("Email"));
 
